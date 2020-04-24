@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Helveticards - 100% CSS playing cards</title>
+    <link rel="stylesheet" href="css/master.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Over de 10?</h1>
+        <h2>Kijk naar de eierdoos!</h2>
+      </div>
+      <div class="eggbox">
+        <img src="img/eierdoos-half.png" alt="Lege eierdoos met 10 vakjes">
+      </div>
+      <div class="cards">
+        <div id="card1"></div>
+        <div id="card2"></div>
+      </div>
+      <div class="buttons">
+        <button class="button no" id="button-no">Nee</a>
+        <button class="button yes" id="button-yes">Ja</a>
+      </div>
+    </div>
+    <div class="popup-container hidden" id="popup-container">
+      <div class="popup" id="popup">
+        <div class="emoji-container">
+          <img class="emoji emoji-happy" src="img/emoji-happy.svg" alt="Lachende emoji">
+          <img class="emoji emoji-sad" src="img/emoji-sad.svg" alt="Droevige emoji">
+        </div>
+        <div class="feedback-title">
+          <h3 class="positive-feedback" id="positive-feedback">Goed gedaan!</h3>
+          <h3 class="negative-feedback" id="negative-feedback">Jammer.</h3>
+        </div>
+      </div>
+    </div>
+  <script src="js/cards.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
