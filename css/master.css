@@ -19,7 +19,7 @@ h2 { color: #bd0000; font-size: 50px; }
 
 
 /* Card */  
-.card { background-color: #fff; -moz-border-radius: 10px; -webkit-border-radius: 10px; -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); float: left; height: 280px; margin: 0 15px 15px 0; position: relative; width: 200px; z-index: 2; }
+.card { background-color: #fff; -moz-border-radius: 10px; -webkit-border-radius: 10px; -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); float: left; height: 280px; margin: 0 15px 15px 0; position: relative; width: 200px; z-index: 2; }
 .card .back { background-color: red; -webkit-transform: rotateY(180deg); }
 .card.flipped { -webkit-transform: rotateY(180deg); }
 .card.heart, .card.diamond { color: red; }
@@ -66,10 +66,34 @@ h2 { color: #bd0000; font-size: 50px; }
 
 .cards, .buttons {
 	display: flex;
+	position: relative;
 }
 
 .cards { 
 	margin-right: -7px;
+}
+
+.arrow {
+	width: 0;
+	height: 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+.arrow.previous {
+	right: 95px;
+	bottom: -20px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #4480d4;
+}
+
+.arrow.next {
+	right: 93px;
+	top: -32px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #4480d4;
 }
 
 .button {
@@ -97,6 +121,10 @@ h2 { color: #bd0000; font-size: 50px; }
 
 .button.no {
 	background-color: #d2222d;
+}
+
+.button.sum10 {
+	background-color: #4480d4;
 }
 
 /* Popup */
@@ -146,6 +174,7 @@ h2 { color: #bd0000; font-size: 50px; }
 
 .emoji {
 	display: none;
+	margin-top: -20px;
 }
 
 .popup.wrong .emoji-sad, .popup.right .emoji-happy {
@@ -156,6 +185,11 @@ h2 { color: #bd0000; font-size: 50px; }
 	font-size: 48px;
 	text-align: center;
 	display: none;
+}
+
+.feedback-message {
+	margin-top: 20px;
+    font-size: 16px;
 }
 
 .popup.wrong .negative-feedback, .popup.right .positive-feedback {

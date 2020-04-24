@@ -17,12 +17,15 @@
         <img src="img/eierdoos-half.png" alt="Lege eierdoos met 10 vakjes">
       </div>
       <div class="cards">
+        <div class="arrow previous" id="arrow-previous"></div>
+        <div class="arrow next" id="arrow-next"></div>
         <div id="card1"></div>
         <div id="card2"></div>
       </div>
       <div class="buttons">
         <button class="button no" id="button-no">Nee</a>
         <button class="button yes" id="button-yes">Ja</a>
+        <button class="button sum10" id="button-sum10">Samen 10</a>
       </div>
     </div>
     <div class="popup-container hidden" id="popup-container">
@@ -35,6 +38,7 @@
           <h3 class="positive-feedback" id="positive-feedback">Goed gedaan!</h3>
           <h3 class="negative-feedback" id="negative-feedback">Jammer.</h3>
         </div>
+        <p class="feedback-message" id="feedback-message"></p>
       </div>
     </div>
   <script src="js/cards.js"></script>
