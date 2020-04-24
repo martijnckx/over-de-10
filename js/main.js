@@ -27,7 +27,7 @@ function over10guess(guess) {
 
 function sum10guess() {
   const correct = getTotal() === 10;
-  if (!correct) corrected = 10-getCard(1);
+  if (!correct) corrected = 10-getCard(0);
   showFeedback(correct, correct ? "" : `Het was ${corrected}.` );
 }
 
@@ -78,12 +78,18 @@ function changeCard(change, pos = 1) {
   showCards();
 }
 
-buttonNo.addEventListener('click', function(e) {e.preventDefault(); over10guess(false);});
-buttonYes.addEventListener('click', function(e) {e.preventDefault(); over10guess(true);});
-buttonSum10.addEventListener('click', function(e) {e.preventDefault(); sum10guess();});
+if (buttonNo && buttonYes) {
+  buttonNo.addEventListener('click', function(e) {e.preventDefault(); over10guess(false);});
+  buttonYes.addEventListener('click', function(e) {e.preventDefault(); over10guess(true);});
+}
+if (buttonSum10) {
+  buttonSum10.addEventListener('click', function(e) {e.preventDefault(); sum10guess();});
+}
 
-arrowNext.addEventListener('click', function(e) {e.preventDefault(); changeCard(+1);});
-arrowPrevious.addEventListener('click', function(e) {e.preventDefault(); changeCard(-1);});
+if (arrowNext && arrowPrevious) {
+  arrowNext.addEventListener('click', function(e) {e.preventDefault(); changeCard(+1);});
+  arrowPrevious.addEventListener('click', function(e) {e.preventDefault(); changeCard(-1);});
+}
 
 generateNewCards();
 showCards();
