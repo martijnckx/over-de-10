@@ -22,7 +22,7 @@ let currentCards = [];
 
 function over10guess(guess) {
   const correct = guess === getTotal() > 10;
-  showFeedback(true);
+  showFeedback(correct);
 }
 
 function sum10guess() {
