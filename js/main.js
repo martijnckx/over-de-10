@@ -63,9 +63,13 @@ function showCards() {
 }
 
 function generateNewCards() {
+  suits = [randInt(0, 3), randInt(0, 3)];
+  // never show the same suit both left and right
+  // (to make it a bit more realistic: there are no two ♣8)
+  while (suits[0] === suits[1]) suits[1] = randInt(0, 3);
   currentCards = [
-    [randInt(0, 3), randInt(0, 8)],
-    [randInt(0, 3), randInt(0, 8)],
+    [suits[0], randInt(0, 8)],
+    [suits[1], randInt(0, 8)],
   ];
   showCards();
 }
