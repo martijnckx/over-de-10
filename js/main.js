@@ -5,6 +5,7 @@ const buttonYes = document.getElementById('button-yes');
 const buttonNo = document.getElementById('button-no');
 const buttonSum10 = document.getElementById('button-sum10');
 const buttonDifference10 = document.getElementById('button-difference10');
+const submitbuttons = [buttonYes, buttonSum10, buttonDifference10];
 
 const popupContainer = document.getElementById('popup-container');
 const popupElement = document.getElementById('popup');
@@ -128,6 +129,21 @@ if (buttonDifference10) {
 if (arrowNext && arrowPrevious) {
   arrowNext.addEventListener('click', function(e) {e.preventDefault(); changeCard(+1);});
   arrowPrevious.addEventListener('click', function(e) {e.preventDefault(); changeCard(-1);});
+}
+
+document.onkeydown = function(e) {
+  e = e || window.event;
+  if (e.key === 'Enter') {
+    for (let button of submitbuttons) {
+      if (button) button.click();
+    }
+  } else if (e.key === 'Backspace') {
+    if (buttonNo) buttonNo.click();
+  }else if (e.key === 'ArrowUp') {
+    if (arrowNext) arrowNext.click();
+  } else if (e.key === 'ArrowDown') {
+    if (arrowPrevious) arrowPrevious.click();
+  }
 }
 
 generateNewCards();
