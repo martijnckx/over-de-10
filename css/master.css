@@ -27,7 +27,7 @@ h2 { color: black; font-size: 50px; }
 .card .corner { line-height: 1; overflow: hidden; position: absolute; text-align: center; }
 .card .corner span { display: block; font-size: 24px; font-weight: bold; }
 .card .corner .number { font-size: 32px; height: 32px; line-height: 32px; }
-.card.ten .corner .number { font-size: 24px; letter-spacing: -1.8px; }
+.card.ten .corner .number { font-size: 24px;  }
 .card .corner.top { left: 8px; top: 12px; }
 .card .corner.bottom { bottom: 12px; right: 8px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
 
@@ -109,7 +109,6 @@ h2 { color: black; font-size: 50px; }
 }
 .c9, .c10, .c11, .c12 {
 	color: #D00169;
-	letter-spacing: -22px;
 }
 .c9::after, .c10::after, .c11::after, .c12::after {
 	border-color: transparent #D00169 transparent transparent;
@@ -119,7 +118,6 @@ h2 { color: black; font-size: 50px; }
 }
 .c13, .c14, .c15, .c16 {
 	color: #01d0c9;
-	letter-spacing: -22px;
 }
 .c13::after, .c14::after, .c15::after, .c16::after {
 	border-color: transparent #01d0c9 transparent transparent;
@@ -129,13 +127,15 @@ h2 { color: black; font-size: 50px; }
 }
 .c17, .c18, .c19, .c20 {
 	color: #e8e11a;
-	letter-spacing: -22px;
 }
 .c17::after, .c18::after, .c19::after, .c20::after {
 	border-color: transparent #e8e11a transparent transparent;
 }
 .c17::before, .c18::before, .c19::before, .c20::before {
 	border-color: transparent transparent transparent #e8e11a;
+}
+.c11, .c12, .c13, .c14, .c15, .c16, .c17, .c18, .c19 {
+	letter-spacing: -10px;
 }
 
 	
