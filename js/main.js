@@ -31,8 +31,8 @@ function setMode(mode) {
   if (mode === "differenceTo10") {
     cardtype = "skipbo";
     bounds = [
-      [11, 19],
-      [1, 9],
+      [11, 20],
+      [1, 10],
     ]
   }
   generateNewCards();
