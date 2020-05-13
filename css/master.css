@@ -53,8 +53,8 @@ h2 { color: black; font-size: 50px; }
 .card .bottom_right { bottom: 24px; right: 30px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
 
 /* Skipbo cards */
+/* Credit to https://timvervoort.com for Skipbo card styles */
 
-/* Cards */
 .sbcard {
 	position: relative;
 	width: 100%;
