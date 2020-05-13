@@ -45,13 +45,13 @@ function over10guess(guess) {
 
 function sum10guess() {
   const correct = getTotal() === 10;
-  if (!correct) corrected = Math.abs(10-getCard(0));
+  if (!correct) corrected = 10-getCard(0);
   showFeedback(correct, correct ? "" : `Het was ${corrected}.` );
 }
 
 function difference10guess() {
   const correct = getDifference() === 10;
-  if (!correct) corrected = 10-getCard(0);
+  if (!correct) corrected = Math.abs(10-getCard(0));
   showFeedback(correct, correct ? "" : `Het was ${corrected}.` );
 }
 
