@@ -937,6 +937,6 @@ const cards = [[`
     `<div class="sbcard c17">1&nbsp;7&nbsp;&nbsp;</div>`,
     `<div class="sbcard c18">1&nbsp;8&nbsp;&nbsp;</div>`,
     `<div class="sbcard c19">1&nbsp;9&nbsp;&nbsp;</div>`,
-    `<div class="sbcard c20">2&nbsp;0&nbsp;&nbsp;</div>`,
+    `<div class="sbcard c20">2&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;</div>`,
   ]
 ];
