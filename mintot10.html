@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Doe de kaarten weg tot 10.</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/master.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Maak 10.</h1>
+        <h2>Doe weg tot 10.</h2>
+      </div>
+      <div class="cards">
+        <div class="arrow previous" id="arrow-previous"></div>
+        <div class="arrow next" id="arrow-next"></div>
+        <div class="card" id="card1"></div>
+        <div class="card changeable" id="card2"></div>
+      </div>
+      <div class="buttons">
+        <button class="button sum10" id="button-difference10">Kijk na</a>
+      </div>
+    </div>
+    <div class="popup-container hidden" id="popup-container">
+      <div class="popup" id="popup">
+        <div class="emoji-container">
+          <img class="emoji emoji-happy" src="img/emoji-happy.svg" alt="Lachende emoji">
+          <img class="emoji emoji-sad" src="img/emoji-sad.svg" alt="Droevige emoji">
+        </div>
+        <div class="feedback-title">
+          <h3 class="positive-feedback" id="positive-feedback">Goed gedaan!</h3>
+          <h3 class="negative-feedback" id="negative-feedback">Jammer.</h3>
+        </div>
+        <p class="feedback-message" id="feedback-message"></p>
+      </div>
+    </div>
+  <script src="js/cards.js"></script>
+  <script src="js/main.js"></script>
+  <script> setMode("differenceTo10"); </script>
+  </body>
+</html>

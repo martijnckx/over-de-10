@@ -50,7 +50,94 @@ h2 { color: black; font-size: 50px; }
 
 .card .bottom_center { bottom: 24px; left: 76px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
 .card .bottom_left { bottom: 24px; left: 30px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
-.card .bottom_right { bottom: 24px; right: 30px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }	
+.card .bottom_right { bottom: 24px; right: 30px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+
+/* Skipbo cards */
+
+/* Cards */
+.sbcard {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/* width: 180px;
+	height: 270px; */
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	font-size: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	border: 10px solid #fff;         
+}
+.sbcard::after, .sbcard::before {
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	content: ' ';
+}
+.sbcard::after {
+	top: 0;
+	right: 0;
+	border-width: 0 2cm 3cm 0;
+}
+.sbcard::before {
+	bottom: 0;
+	left: 0;
+	border-width: 3cm 0 0 2cm;               
+}
+.c1, .c2, .c3, .c4 {
+	color: #2C2D7F;
+}
+.c1::after, .c2::after, .c3::after, .c4::after {
+	border-color: transparent #2C2D7F transparent transparent;
+}
+.c1::before, .c2::before, .c3::before, .c4::before {
+	border-color: transparent transparent transparent #2C2D7F;
+}
+.c5, .c6, .c7, .c8 {
+	color: #8ECF4F;
+}
+.c5::after, .c6::after, .c7::after, .c8::after {
+	border-color: transparent #8ECF4F transparent transparent;
+}
+.c5::before, .c6::before, .c7::before, .c8::before {
+	border-color: transparent transparent transparent #8ECF4F;
+}
+.c9, .c10, .c11, .c12 {
+	color: #D00169;
+	letter-spacing: -22px;
+}
+.c9::after, .c10::after, .c11::after, .c12::after {
+	border-color: transparent #D00169 transparent transparent;
+}
+.c9::before, .c10::before, .c11::before, .c12::before {
+	border-color: transparent transparent transparent #D00169;
+}
+.c13, .c14, .c15, .c16 {
+	color: #01d0c9;
+	letter-spacing: -22px;
+}
+.c13::after, .c14::after, .c15::after, .c16::after {
+	border-color: transparent #01d0c9 transparent transparent;
+}
+.c13::before, .c14::before, .c15::before, .c16::before {
+	border-color: transparent transparent transparent #01d0c9;
+}
+.c17, .c18, .c19, .c20 {
+	color: #e8e11a;
+	letter-spacing: -22px;
+}
+.c17::after, .c18::after, .c19::after, .c20::after {
+	border-color: transparent #e8e11a transparent transparent;
+}
+.c17::before, .c18::before, .c19::before, .c20::before {
+	border-color: transparent transparent transparent #e8e11a;
+}
+
 	
 /* Page layout */
 
